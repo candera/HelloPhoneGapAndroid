@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Hello World</title>
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="main.js"></script>
+
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <form>
+      Name: <input name="name" id="name" /> <br />
+      <input type="button" value="Say Hi"
+             onclick="HelloPhoneGap.hello(this.form.name.value)" />
+    </form>
+
+    <script>
+      HelloPhoneGap.start();
+    </script>
+  </body>
+</html>

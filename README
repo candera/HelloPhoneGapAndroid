@@ -1,0 +1,27 @@
+# HelloPhoneGapAndroid
+
+A simple project that demonstrates using ClojureScript with PhoneGap,
+targeting Android.
+
+This project is *very* preliminary - do not take it as an indication
+that this is how you should do things.
+
+## Building and Installing
+
+To build and install the project, type
+
+```
+ant debug install
+```
+
+You will need to have an Android device or emulator attached and
+running. After completion of this command, a native app called "App"
+will appear on the device.
+
+## Structure
+
+The HTML page for the application appears in the
+`assets/www/index.html` file. The ClojureScript that drives the app is
+located in `src/cljs/HelloPhoneGap.cljs`. The `ant debug install` task
+will invoke `lein cljsbuild once` to compile the ClojureScript to the
+`assets/www/main.js` file that is referenced by `index.html`.
