@@ -11,7 +11,7 @@ that this is how you should do things.
 To build and install the project, type
 
 ```
-ant debug install
+ant clean debug install
 ```
 
 You will need to have an Android device or emulator attached and
