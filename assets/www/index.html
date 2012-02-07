@@ -9,14 +9,18 @@
   <body>
     <h1>Hello World</h1>
 
-    <form>
-      Name: <input name="name" id="name" /> <br />
-      <input type="button" value="Say Hi"
-             onclick="HelloPhoneGap.hello(this.form.name.value)" />
-    </form>
+    <div>X: <span id="acc-x">N/A</span></div>
+    <div>Y: <span id="acc-y">N/A</span></div>
+    <div>Z: <span id="acc-z">N/A</span></div>
+    <div>T: <span id="acc-t">N/A</span></div>
+
+    <input type="textarea" id="command" />
+    <input type="button" value="Go" onclick="evaluate()" />
+    <div id="result">N/A</div>
 
     <script>
       HelloPhoneGap.start();
+      function evaluate() { document.getElementById("result").innerText = eval(document.getElementById("command").value); }
     </script>
   </body>
 </html>
